@@ -1,6 +1,9 @@
 bitbake.lock
 build
+buildhistory
+cache
 sources/*
+environment-*
 deploy/
 !sources/layers.txt
 conf/auto.conf
