@@ -3,5 +3,5 @@ meta-angstrom,https://github.com/eli-global-ph/meta-angstrom,angstrom-v2013.12-y
 meta-openembedded,https://github.com/eli-global-ph/meta-oe.git,angstrom-staging-yocto1.5,HEAD
 meta-beagleboard,https://github.com/eli-global-ph/meta-beagleboard.git,dora,HEAD
 meta-ti,https://github.com/eli-global-ph/meta-ti.git,angstrom-staging-yocto1.5,HEAD
-meta-linaro,http://git.linaro.org/openembedded/meta-linaro.git,dora,HEAD
+meta-linaro,https://github.com/eli-global-ph/meta-linaro.git,dora,HEAD
 openembedded-core,https://github.com/eli-global-ph/oe-core.git,angstrom-staging-yocto1.5,HEAD
