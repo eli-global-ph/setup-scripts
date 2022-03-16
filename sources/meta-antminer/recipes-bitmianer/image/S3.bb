@@ -36,7 +36,7 @@ inherit image
 
 do_rootfs_append() {
 	echo "do_build_append"
-	sudo cp -rf /home/rex/setup-scripts/deploy/eglibc/images/beaglebone/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.tar.xz /tftpboot/initramfs.bin
-	sudo cp -rf /home/rex/setup-scripts/deploy/eglibc/images/beaglebone/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.tar.xz /tftpboot/initramfs.bin.SD
+	#sudo cp -rf /home/rex/setup-scripts/deploy/eglibc/images/beaglebone/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.cpio.gz.u-boot /tftpboot/initramfs.bin
+	#sudo cp -rf /home/rex/setup-scripts/deploy/eglibc/images/beaglebone/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.cpio.gz.u-boot /tftpboot/initramfs.bin.SD
 }
 
