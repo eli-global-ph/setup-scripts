@@ -1,0 +1,26 @@
+DESCRIPTION = "Device tree binary for Beagle bone in bitmainers"
+LICENSE = "unknown"
+LIC_FILES_CHKSUM = "file://COPYING;md5=d41d8cd98f00b204e9800998ecf8427e"
+PR = "r0"
+SRC_URI = "file://am335x-boneblack.dts \
+	file://am335x-bone-common.dtsi \
+	file://am335x-bone-btm.dtsi \
+	file://am33xx.dtsi \
+	file://skeleton.dtsi \
+	file://tps65217.dtsi \
+	file://COPYING"
+
+S = "${WORKDIR}"
+
+KERNEL_DEVICETREE = "\
+	am335x-boneblack.dtb \
+	"
+
+#do_compile() {
+# make am335x-boneblack
+# make am335x-boneblack.dtb
+#}
+
+#do_install() {
+#	cp -p *.dtb ${DEPLOY_DIR_IMAGE}/.
+#}
