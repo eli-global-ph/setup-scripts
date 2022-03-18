@@ -16,11 +16,10 @@ KERNEL_DEVICETREE = "\
 	am335x-boneblack.dtb \
 	"
 
-#do_compile() {
-# make am335x-boneblack
-# make am335x-boneblack.dtb
-#}
+do_compile() {	
+	dtc am335x-boneblack.dts -O dtb -o am335x-boneblack.dtb
+}
 
-#do_install() {
-#	cp -p *.dtb ${DEPLOY_DIR_IMAGE}/.
-#}
+do_install() {
+	cp -p *.dtb ${DEPLOY_DIR_IMAGE}/.
+}
