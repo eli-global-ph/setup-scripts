@@ -1,4 +1,4 @@
-export IMAGE_BASENAME = "antminer"
+export IMAGE_BASENAME = "S9-antminer"
 IMAGE_INSTALL = " \
 	busybox \
 	base-files \
@@ -35,7 +35,7 @@ IMAGE_INSTALL = " \
 
 inherit image
 
-EXPORTED_TMPIMAGE = "initramfs"
+EXPORTED_TMPIMAGE = "S9-initramfs"
 DEFAULT_SYS_PASSWORD = "rex"
 
 do_rootfs_append() {

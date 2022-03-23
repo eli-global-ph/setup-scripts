@@ -33,3 +33,10 @@ If you have questions or feedback, please subscribe to http://lists.linuxtogo.or
 
 Angstrom Distribution maintainers: Koen Kooi <koen@dominion.thruhere.net>
                                    Khem Raj <raj.khem@gmail.com>
+
+
+## Update
+
+Date: 03-16-2022
+Description: Fix copy image u-root to .SD permission denied
+Todo: find a secure way on how to implement `DEFAULT_SYS_PASSWORD` variable before compiling.

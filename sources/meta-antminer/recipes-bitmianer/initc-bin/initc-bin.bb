@@ -44,7 +44,7 @@ do_install() {
             	echo "S4+"
 	else
 		install -m 0644 ${S}/spitop_noncerev.rbf ${D}${bindir} #fpga bin file
-		echo "S4"	
+		echo "${Miner_TYPE}"	
 	fi
 	install -m 0755 ${S}/spi-test ${D}${bindir}
         install -m 0755 ${S}/asic_test ${D}${bindir}
