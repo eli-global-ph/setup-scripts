@@ -8,7 +8,7 @@ SRC_URI += "\
 	file://network.conf.factory \
 	file://network_c1.conf.factory \
 	file://cgminer.sh \
-	file://cgminer.conf.factory \
+	file://bmminer.conf.factory \
 	file://cgminer_c1.conf.factory \
 	file://cgminer_c2.conf.factory \
 	file://cgminer_s4p.conf.factory \
@@ -79,32 +79,32 @@ do_install_append() {
 	install -m 0400 ${WORKDIR}/shadow.factory ${D}${sysconfdir}/shadow.factory
 	if [ x"C1" == x"${Miner_TYPE}" ]; then
 		install -m 0400 ${WORKDIR}/network_c1.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_c1.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_c1.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"C2" == x"${Miner_TYPE}" ]; then
 		install -m 0400 ${WORKDIR}/network_c1.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_c2.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_c2.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"S5" == x"${Miner_TYPE}" ]; then
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_s5.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_s5.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"S2" == x"${Miner_TYPE}" ]; then
 		echo "AntMiner ${Miner_TYPE}" > ${WORKDIR}/user_defined_lcd.factory
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_s2.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_s2.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"S4+" == x"${Miner_TYPE}" ]; then
 		echo "AntMiner ${Miner_TYPE}" > ${WORKDIR}/user_defined_lcd.factory
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_s4p.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_s4p.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"S5+" == x"${Miner_TYPE}" ]; then
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_s5p.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_s5p.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	elif [ x"S9k" == x"${Miner_TYPE}" ]; then
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer_s9k.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/cgminer_s9k.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 
 	else	
 		echo "AntMiner ${Miner_TYPE}" > ${WORKDIR}/user_defined_lcd.factory
 		install -m 0400 ${WORKDIR}/network.conf.factory ${D}${sysconfdir}/network.conf.factory
-		install -m 0400 ${WORKDIR}/cgminer.conf.factory ${D}${sysconfdir}/cgminer.conf.factory
+		install -m 0400 ${WORKDIR}/bmminer.conf.factory ${D}${sysconfdir}/bmminer.conf.factory
 	fi
 
 	install -m 0400 ${WORKDIR}/user_defined_lcd.factory ${D}${sysconfdir}/user_defined_lcd.factory
