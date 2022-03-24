@@ -57,7 +57,7 @@ do_rootfs_append() {
 	else 
 		echo ${DEFAULT_SYS_PASSWORD} | sudo -S -k touch /tftpboot/${EXPORTED_TMPIMAGE}.bin.SD
 	fi
-	echo ${DEFAULT_SYS_PASSWORD} | sudo -S -k cp -rf ${DEPLOY_DIR_IMAGE}/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.cpio.gz.u-boot /tftpboot/${EXPORTED_TMPIMAGE}.bin
-	echo ${DEFAULT_SYS_PASSWORD} | sudo -S -k cp -rf ${DEPLOY_DIR_IMAGE}/Angstrom-antminer-eglibc-ipk-v2013.12-beaglebone.rootfs.cpio.gz.u-boot /tftpboot/${EXPORTED_TMPIMAGE}.bin.SD
+	echo ${DEFAULT_SYS_PASSWORD} | sudo -S -k cp -rf ${DEPLOY_DIR_IMAGE}/Angstrom-S9-antminer-eglibc-ipk-v2013.12-beagleboard.rootfs.cpio.gz.u-boot /tftpboot/${EXPORTED_TMPIMAGE}.bin
+	echo ${DEFAULT_SYS_PASSWORD} | sudo -S -k cp -rf ${DEPLOY_DIR_IMAGE}/Angstrom-S9-antminer-eglibc-ipk-v2013.12-beagleboard.rootfs.cpio.gz.u-boot /tftpboot/${EXPORTED_TMPIMAGE}.bin.SD
 }
 
