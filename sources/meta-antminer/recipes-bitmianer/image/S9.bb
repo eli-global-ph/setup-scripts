@@ -28,7 +28,7 @@ IMAGE_INSTALL = " \
 	avahi \
 	led-blink \
 	cgminer \
-	spitools \
+	bitmain-spi-s3 \
 "
 #omap3-mkcard 			   
 #cgminer 
