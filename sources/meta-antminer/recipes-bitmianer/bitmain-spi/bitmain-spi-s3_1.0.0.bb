@@ -1,4 +1,3 @@
-
 DESCRIPTION = "Kernel Module Bitmain spi Fpga Driver"
 HOMEPAGE = "http://www.example.com"
 SECTION = "kernel/modules"
@@ -13,12 +12,12 @@ PR = "r0"
 SRC_URI = " \
 	file://bitmain-asic-drv.c \
 	file://bitmain-asic.h \
-file://fpga.c \
-file://fpga.h \
-file://sha2.c \
-file://sha2.h \
-file://spi.c \
-file://spi.h \
+	file://fpga.c \
+	file://fpga.h \
+	file://sha2.c \
+	file://sha2.h \
+	file://spi.c \
+	file://spi.h \
 	file://Makefile \
 	"
 
