@@ -1,4 +1,4 @@
-export IMAGE_BASENAME = "S9-antminer"
+export IMAGE_BASENAME = "${Miner_TYPE}-antminer"
 IMAGE_INSTALL = " \
 	busybox \
 	base-files \
